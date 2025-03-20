@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav - Portfolio Contact</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+
+/* Contact Section Styles */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f7f7fb;
+    flex: 1;
+}
+
+
+.contact-title {
+    text-align: center; /* Align title to the left */
+
+}
+
+.contact-title {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black; /* Black text color */
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Animated Underline Effect */
+.contact-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #6a0dad; /* Purple underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-title:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.contact-title:hover::after {
+    transform: scaleX(1); /* Expand underline */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6a0dad;
+}
+
+.contact-desc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c2c2c;
+    text-transform: uppercase;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #6a0dad;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.contact-btn:hover {
+    background: #5a0099;
+    transform: scale(1.05);
+}
+
+.contact-divider {
+    width: 90%;
+    margin: 30px auto;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+/* Social Media Icons Grid */
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-item {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c2c2c;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-item i {
+    font-size: 32px;
+    color: #6a0dad;
+    margin-bottom: 8px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.social-item:hover {
+    transform: scale(1.1);
+}
+
+.social-item:hover i {
+    color: #5a0099;
+
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Vaibhav</div>
+        <ul>
+            <li><a href="index.html">Projects</a></li>  <!-- Add 'active' here -->
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contact Me</h2>
+    
+        <div class="contact-info">
+            <h3 class="contact-subtitle">Have Any Questions?</h3>
+            <p class="contact-desc">I'M VERY RESPONSIVE TO MESSAGES</p>
+            <a href="mailto:vaibhavmakvana14118@gmail.com" class="contact-btn">Send me an Email</a>
+        </div>
+    
+        <hr class="contact-divider">
+    
+        <div class="social-links">
+            <div class="social-item">
+                <a href="mailto:vaibhavmakvana14118@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="tel:+91 9106117060">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Me</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.facebook.com/profile.php?id=61560047093142" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.instagram.com/vaibhav_ahir_1411/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/vaibhav-makvana-6057b3332/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://github.com/vaibhavahir1411" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+    <footer>
+        <p>Made with 💜 by Vaibhav © 2025</p>
+    </footer>
+    
+</body>
+</html>

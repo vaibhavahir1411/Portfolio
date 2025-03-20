@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - My Portfolio</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #6a0dad;
+            margin-left: 20px;
+        }
+
+        .project-description {
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 40px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid #6a0dad;
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.01);
+        }
+
+        .details {
+            margin-top: 30px;
+        }
+
+        .details h2 {
+            color: #6a0dad;
+            margin-bottom: 10px;
+        }
+
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .details ul li {
+            background: #eee;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        .demo-button {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #6a0dad;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .demo-button:hover {
+            background-color: #5a0b9d;
+        }
+
+
+        
+
+h1 {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Animated Underline Effect */
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #6a0dad; /* Purple underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+h1:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+h1:hover::after {
+    transform: scaleX(1); /* Expand underline */
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a0b9d;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Vaibhav</div>
+        <ul>
+            <li><a href="index.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        
+        <h1>My Portfolio Website</h1>
+        <p class="project-description">y portfolio website is a fully responsive, modern, and visually appealing platform designed to showcase my skills, projects, and experience. It features an intuitive navigation system, smooth animations, and a sleek UI to provide an engaging user experience. The website includes multiple sections, such as a homepage introduction, skills overview, project gallery, about me section, and an easy-to-use contact page. Built with the latest web technologies, this portfolio ensures fast performance, accessibility, and mobile responsiveness, making it a perfect platform for presenting my work.</p>
+        
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="projects/portfolio-project(1)/home screen.png" alt="Home Page Screenshot">
+                <p>The homepage provides a professional and elegant introduction with smooth transitions.</p>
+            </div>
+            <div class="image-item">
+                <img src="projects/portfolio-project(1)/skills.png" alt="Skills Page Screenshot">
+                <p>The skills page highlights my technical expertise in various technologies.</p>
+            </div>
+            <div class="image-item">
+                <img src="projects/portfolio-project(1)/about.png" alt="About Page Screenshot">
+                <p>The about section gives an insight into my background, experience, and interests.</p>
+            </div>
+            <div class="image-item">
+                <img src="projects/portfolio-project(1)/contact.png" alt="Contact Page Screenshot">
+                <p>The contact page allows visitors to reach out easily via email and social media.</p>
+            </div>
+        </div>
+        
+        <div class="details">
+            <h2>Project Features</h2>
+            <ul>
+                <li>Fully Responsive Design</li>
+                <li>Modern UI/UX with animations</li>
+                <li>Optimized Performance</li>
+            </ul>
+        </div>
+        
+        <div class="details">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstarp</li>
+            </ul>
+        </div>
+
+        <div class="details">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li><b>Dark/Light Mode Toggle:</b> A fully functional dark and light mode switch to enhance user experience based on preferences.</li>
+                <li><b>Blog Section:</b> Adding a blog section where I can share my thoughts, tutorials, and experiences in web development.</li>
+                <li><b>Project Filtering & Sorting: </b>A feature that allows users to filter projects by category or technology.</li>
+                <li><b>Interactive Animations:</b> Advanced animations using GSAP or Framer Motion to make the website more dynamic.</li>
+            </ul>
+        </div>
+        
+        <div class="button-container">
+            <a href="#" target="_blank" class="demo-button">View Live Demo</a>
+        </div>
+        <div class="button-container right-align">
+            <button class="back-button" onclick="history.back()">⬅ Back</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Made with 💜 by Vaibhav © 2025</p>
+    </footer>
+</body>
+</html>

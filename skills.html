@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav - Portfolio skills</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* ======= Skills Section ======= */
+.skills {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Skills Container (Three Columns) */
+.skills .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto adjusts for responsiveness */
+  gap: 30px; /* Spacing between skill items */
+  justify-content: center;
+  align-items: center;
+  max-width: 900px; /* Limits width for better centering */
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* Skill Item */
+.skills .skill-item {
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px; /* Ensures equal height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.skills .skill-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.skills .skill-item .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #6a0dad; /* Purple Theme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.skills .skill-item .icon .fa {
+  font-size: 28px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Icon */
+.skills .skill-item:hover .icon {
+  background: #4b0082; /* Darker Purple on Hover */
+}
+
+/* Skill Title */
+.skills .skill-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-black-900);
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .skills .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* Two per row on tablets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills .skills-container {
+    grid-template-columns: repeat(1, 1fr); /* One per row on mobile */
+  }
+}
+/* Icon Styling - Default (White Background, Purple Icon) */
+.skills .skill-item .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #fff; /* White Background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.skills .skill-item .icon .fa {
+  font-size: 28px;
+  color: #6a0dad; /* Purple Icon */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Skill Box (Changes Icon Background & Color) */
+.skills .skill-item:hover .icon {
+  background: #6a0dad; /* Purple Background */
+}
+
+.skills .skill-item:hover .icon .fa {
+  color: #fff; /* White Icon */
+}
+
+
+
+.section-title {
+    text-align: center; /* Align title to the left */
+
+}
+
+.section-title {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black; /* Black text color */
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Animated Underline Effect */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background-color: #6a0dad; /* Purple underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.section-title:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.section-title:hover::after {
+    transform: scaleX(1); /* Expand underline */
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Vaibhav</div>
+        <ul>
+            <li><a href="index.html">Projects</a></li>  <!-- Home (Projects Page) -->
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>  <!-- Opens PDF -->
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-code"></i></div>
+            <h4>Web Development</h4>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-database"></i></div>
+            <h4>SQL & Databases</h4>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-paint-brush"></i></div>
+            <h4>UI/UX Design</h4>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-video"></i></div>
+            <h4>Video Editing</h4>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-image"></i></div>
+            <h4>Graphic Design</h4>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><i class="fa fa-desktop"></i>
+            </div>
+            <h4>Web Design</h4>
+          </div>
+        </div>
+      </section>
+      
+    
+      
+      
+
+
+    <footer>
+        <p>Made with 💜 by Vaibhav © 2025</p>
+    </footer>
+</body>
+</html>

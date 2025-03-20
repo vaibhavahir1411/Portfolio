@@ -1,0 +1,128 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    max-width: 100%; /* Ensures no element overflows */
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff; /* Ensures the background is white */
+    color: black; /* Set text color explicitly */
+}
+nav {
+    display: flex;
+    justify-content: space-between;  /* Logo on left, menu on right */
+    align-items: center;
+    padding: 30px 80px;  /* More padding */
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;  /* Prevent content from overflowing */
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    white-space: nowrap;  /* Prevents logo from wrapping */
+}
+
+/* NAVIGATION MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Increased spacing */
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Items */
+nav ul li {
+    display: inline;
+}
+
+/* Menu Links */
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #897EF9;  /* Light purple */
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Active Page */
+nav ul li a.active {
+    font-weight: 700;
+    color: gray;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    font-weight: 700;
+    color: #6a0dad;
+    text-decoration: underline;
+}
+
+/* Prevent Cutting */
+@media (max-width: 1024px) {
+    nav {
+        padding: 20px 40px; /* Less padding on smaller screens */
+    }
+    nav ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+/* toogle bar */
+
+
+/* footer */
+
+
+footer {
+    text-align: center;
+    padding:7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6A5ACD;  /* Light purple */
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light border on top */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    position: relative;
+    width: 100%;
+}
+
+/* Make Footer Stick to Bottom */
+
+main {
+    flex: 1;/* Push footer to the bottom */
+    background-color: inherit; 
+}

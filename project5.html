@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - My Portfolio</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #6a0dad;
+            margin-left: 20px;
+        }
+
+        .project-description {
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 40px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid #6a0dad;
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.01);
+        }
+
+        .details {
+            margin-top: 30px;
+        }
+
+        .details h2 {
+            color: #6a0dad;
+            margin-bottom: 10px;
+        }
+
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .details ul li {
+            background: #eee;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        .demo-button {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #6a0dad;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .demo-button:hover {
+            background-color: #5a0b9d;
+        }
+
+        .right-align {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #5a0b9d;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Vaibhav</div>
+        <ul>
+            <li><a href="index.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <h1>Weather App</h1>
+        <p class="project-description">A simple weather application that displays temperature, humidity, and changes the background image based on the current weather conditions. Built using HTML, CSS, and JavaScript with API integration.</p>
+        
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="projects/weather app project(5)/main_image.png" alt="Weather App Screenshot">
+            </div>
+        </div>
+        
+        <div class="details">
+            <h2>Project Features</h2>
+            <ul>
+                <li>Displays Temperature, Humidity, and Weather Conditions</li>
+                <li>Changes Background Image Based on Weather</li>
+                <li>Uses API Integration for Live Weather Data</li>
+            </ul>
+        </div>
+        
+        <div class="details">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript (Fetch API)</li>
+                <li>OpenWeather API</li>
+            </ul>
+        </div>
+
+        <div class="details">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li><b>Hourly and Weekly Forecast:</b> Displaying extended weather data.</li>
+                <li><b>Geolocation Support:</b> Automatically detect user location for weather updates.</li>
+                <li><b>Theme Customization:</b> Adding dark and light mode options.</li>
+            </ul>
+        </div>
+        
+        <div class="button-container">
+            <a href="#" target="_blank" class="demo-button">View Live Demo</a>
+        </div>
+        <div class="button-container right-align">
+            <button class="back-button" onclick="history.back()">⬅ Back</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Made with 💜 by Vaibhav © 2025</p>
+    </footer>
+</body>
+</html>
