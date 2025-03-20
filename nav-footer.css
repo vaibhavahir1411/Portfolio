@@ -100,7 +100,60 @@ nav ul li a:hover {
 
 
 
+
 /* toogle bar */
+/* Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #897EF9;
+    position: absolute;
+    right: 20px;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle icon on mobile */
+    }
+    
+    .nav-links {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%; /* Full width for better view */
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: block; /* Display block when toggled */
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        font-size: 20px; /* Bigger font for better visibility */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #6a0dad;
+        font-weight: bold;
+        font-size: 22px; /* Larger text */
+        display: block; /* Full width clickable */
+    }
+}
+
+
+
 
 
 /* footer */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav - Portfolio</title>
     <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* Intro Section */
@@ -232,14 +233,18 @@
 <body>
     <nav>
         <div class="logo">Vaibhav</div>
-        <ul>
-            <li><a href="index.html" class="active">Projects</a></li>  <!-- Home (Projects Page) -->
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>  <!-- Toggle Menu Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>  <!-- Opens PDF -->
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
     <section class="intro-section">
         <div class="intro-text">
             <h1>Hi, I'm <span>Vaibhav</span></h1>
@@ -342,5 +347,12 @@
     <footer>
         <p>Made with 💜 by Vaibhav © 2025</p>
     </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+    
 </body>
 </html>

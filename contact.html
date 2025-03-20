@@ -147,14 +147,18 @@
 <body>
     <nav>
         <div class="logo">Vaibhav</div>
-        <ul>
-            <li><a href="index.html">Projects</a></li>  <!-- Add 'active' here -->
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>  <!-- Toggle Menu Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" >Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="resume.pdf" target="_blank">Resume</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
+    
 
     <section id="contact" class="contact">
         <h2 class="contact-title">Contact Me</h2>
@@ -215,6 +219,11 @@
     <footer>
         <p>Made with 💜 by Vaibhav © 2025</p>
     </footer>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
     
 </body>
 </html>

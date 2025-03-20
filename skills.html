@@ -164,16 +164,20 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">Vaibhav</div>
-        <ul>
-            <li><a href="index.html">Projects</a></li>  <!-- Home (Projects Page) -->
-            <li><a href="skills.html" class="active">Skills</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>  <!-- Opens PDF -->
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <div class="logo">Vaibhav</div>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>  <!-- Toggle Menu Icon -->
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" >Projects</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
 
     <section class="skills">
         <h2 class="section-title">Skills</h2>
@@ -205,14 +209,14 @@
           </div>
         </div>
       </section>
-      
-    
-      
-      
-
-
     <footer>
         <p>Made with 💜 by Vaibhav © 2025</p>
     </footer>
+
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("show");
+      });
+  </script>
 </body>
 </html>
