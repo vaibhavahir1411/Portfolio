@@ -100,8 +100,6 @@ nav ul li a:hover {
 
 
 
-
-/* toogle bar */
 /* Toggle Button */
 .menu-toggle {
     display: none;
@@ -112,47 +110,91 @@ nav ul li a:hover {
     right: 20px;
     top: 5%;
     transform: translateY(-50%);
+    z-index: 1100;
 }
 
-/* Mobile Navigation */
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Links */
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #897EF9;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-links a.active {
+    font-weight: 700;
+    color: gray;
+}
+
+.nav-links a:hover {
+    font-weight: 700;
+    color: #6a0dad;
+    text-decoration: underline;
+}
+
+/* Responsive Navigation */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Show toggle icon on mobile */
+        display: block; /* Show toggle button on mobile */
+    }
+   
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0; /* Initially hidden */
+        
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, height 0.4s ease-in-out;
     }
     
-    .nav-links {
-        display: none; /* Hide menu initially */
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%; /* Full width for better view */
-        background-color: white;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-        padding: 20px 0;
-        text-align: center;
-        z-index: 1000;
-    }
-
     .nav-links.show {
-        display: block; /* Display block when toggled */
+        height: 81vh;
+        margin-top: 65px;
+        opacity: 1;
+        transform: translateY(0);
+        backdrop-filter: blur(30px);
+        background-color: #d8d8da3e;
     }
 
     .nav-links li {
-        padding: 15px 0;
-        font-size: 20px; /* Bigger font for better visibility */
+        font-size: 20px;
     }
 
     .nav-links a {
         text-decoration: none;
         color: #6a0dad;
         font-weight: bold;
-        font-size: 22px; /* Larger text */
-        display: block; /* Full width clickable */
+        font-size: 35px;
+        display: block;
+        padding: 3px;
+    }
+    .nav-links a:hover{
+        transform: scale(1.1);
     }
 }
-
-
 
 
 

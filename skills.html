@@ -83,12 +83,14 @@
 @media screen and (max-width: 992px) {
   .skills .skills-container {
     grid-template-columns: repeat(2, 1fr); /* Two per row on tablets */
+    padding:0 20px 0 20px ;
   }
 }
 
 @media screen and (max-width: 600px) {
   .skills .skills-container {
     grid-template-columns: repeat(1, 1fr); /* One per row on mobile */
+    padding:0 20px 0 20px ;
   }
 }
 /* Icon Styling - Default (White Background, Purple Icon) */
@@ -215,9 +217,15 @@
     </footer>
 
     <script>
-      document.querySelector(".menu-toggle").addEventListener("click", function () {
-          document.querySelector(".nav-links").classList.toggle("show");
-      });
+      document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+});
+
   </script>
 </body>
 </html>
