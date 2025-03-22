@@ -54,7 +54,7 @@
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 426px) {
     .intro-section {
         flex-direction: column;
         text-align: center;
@@ -64,12 +64,57 @@
     .intro-text {
         max-width: 100%;
     }
+    .intro-text p{
+        text-align: justify;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .intro-text h1{
+        font-size: 34px;
+        margin-top: 10px;
+    }
 
     .intro-image img {
         max-width: 80%;
         margin-top: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+    .intro-text p{
+        text-align: justify;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .intro-text h1{
+        font-size: 34px;
+        margin-top: 10px;
+    }
+
+    .intro-image img {
+        max-width: 45%;
+        height: auto;
+    }   
+}
+@media (max-width: 426px) {
+    .intro-text p{
+        font-size: 13px;
+    }
+    .intro-image img {
+        max-width: 80%;
+        height: auto;
+    }  
+}
+
 .purple-text {
     color: #6a0dad; /* Adjust this color as per your theme */
     font-weight: bold;
@@ -157,7 +202,7 @@
 @media (max-width: 768px) {
     .projects {
         grid-template-columns: 1fr;
-        max-width: 90%; /* Slightly wider on mobile */
+        max-width: 80%; /* Slightly wider on mobile */
     }
 
     .project {
@@ -204,6 +249,12 @@
     transform: scaleX(1); /* Expand underline */
 }
 
+@media (max-width: 426px){
+    #projects-title a{
+        font-size: 18px;
+        width: 70%;
+    }
+}
 #view-all-projects {
     text-align: center; /* Center the button */
     margin-top: 20px; /* Add some space above the button */
