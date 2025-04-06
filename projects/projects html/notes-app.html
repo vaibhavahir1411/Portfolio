@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project - Notes App</title>
+  <link rel="stylesheet" href="/nav-footer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/projects/projects.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo">Vaibhav</div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/projects.html" class="active">Projects</a></li>
+      <li><a href="/about.html">About Me</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Notes App</h1>
+    <p class="project-description">
+      This Notes App is a full-stack web application that allows users to add, edit, and delete notes. Each note includes a title and description, and tasks are managed individually for each user. It supports user-specific session handling, enabling a personalized task management experience. Built with Node.js, Express, and EJS.
+    </p>
+
+    <div class="image-gallery">
+      <div class="image-item">
+        <img src="/projects/project photos/notes-app/notesApp-photo.png" alt="Notes App Screenshot">
+      </div>
+    </div>
+
+    <div class="details">
+      <h2>Project Features</h2>
+      <ul>
+        <li>User Authentication</li>
+        <li>Add Tasks with Title and Description</li>
+        <li>Edit and Delete Tasks</li>
+        <li>Task Management Per User</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>EJS</li>
+        <li>HTML/CSS/JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Future Enhancements</h2>
+      <ul>
+        <li><b>Authentication with JWT:</b> Secure user sessions using tokens.</li>
+        <li><b>Task Categories:</b> Ability to categorize and filter tasks.</li>
+        <li><b>Search Functionality:</b> Quickly search through tasks.</li>
+        <li><b>Dark Mode:</b> A dark mode toggle for improved user experience.</li>
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <a href="https://notes-app-pnqo.onrender.com/" target="_blank" class="demo-button">View Live Demo</a>
+    </div>
+    <div class="button-container right-align">
+      <button class="back-button" onclick="history.back()">⬅ Back</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💜 by Vaibhav © 2025</p>
+  </footer>
+
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

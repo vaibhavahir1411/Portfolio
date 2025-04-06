@@ -80,12 +80,17 @@
         margin-top: 20px;
     }
 }
-
+@media (max-width: 1025px) {
+    .intro-image img {
+        max-width: 370px;
+        height: auto;
+    } 
+}
 @media (max-width: 768px) {
     .intro-section {
-        flex-direction: column;
+        
         text-align: center;
-        padding: 30px 5%;
+        padding: 50px 5%;
     }
 
     .intro-text {
@@ -102,7 +107,7 @@
     }
 
     .intro-image img {
-        max-width: 45%;
+        max-width: 350px;
         height: auto;
     }   
 }
@@ -123,162 +128,6 @@
 
 
 
-/* projects style */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px;
-    padding: 50px;
-    max-width: 70%; /* Reduced from 80% */
-    margin: 0 auto; /* Centering */
-}
-
-.project {
-    background-color: black;
-    position: relative;
-    width: 90%; /* Smaller boxes */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto; /* Centering each project */
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-details {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.project:hover .project-details {
-    opacity: 1;
-}
-
-.project-details h3 {
-    font-size: 16px; /* Slightly smaller text */
-    margin-bottom: 10px;
-}
-
-.project-details hr {
-    border: 0.5px solid white;
-    width: 50%; /* Adjusted width */
-    margin: 10px 0;
-}
-
-.view-details {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.project:hover .view-details {
-    color: #bbb;
-}
-
-/* Responsive: Switch to one column on smaller screens */
-@media (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr;
-        max-width: 80%; /* Slightly wider on mobile */
-    }
-
-    .project {
-        width: 100%;
-    }
-}
-
-#projects-title {
-    text-align: center; /* Align title to the left */
-
-}
-
-#projects-title a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: black; /* Black text color */
-    display: inline-block;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-/* Animated Underline Effect */
-#projects-title a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 4px;
-    background-color: #6a0dad; /* Purple underline */
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-#projects-title a:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-#projects-title a:hover::after {
-    transform: scaleX(1); /* Expand underline */
-}
-
-@media (max-width: 426px){
-    #projects-title a{
-        font-size: 18px;
-        width: 70%;
-    }
-}
-#view-all-projects {
-    text-align: center; /* Center the button */
-    margin-top: 20px; /* Add some space above the button */
-}
-
-.view-all-button {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white; /* White text color */
-    background-color: #6a0dad; /* Purple background */
-    padding: 12px 24px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.view-all-button:hover {
-    background-color: #5a0b9d; /* Darker purple on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-}
 
     </style>
 </head>
@@ -289,9 +138,9 @@
             <i class="fas fa-bars"></i>  <!-- Toggle Menu Icon -->
         </div>
         <ul class="nav-links">
-            <li><a href="#projects-section" class="active" id="project-nav">Projects</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="skills.html">Skills</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -305,104 +154,32 @@
                 That enhance user experiences <span> always eager to learn, improve, and push boundaries in the tech world.</span>
             </p>
             <p>Welcome to my portfolio.</p>
+
+            <a href="Vaibhav_Resume.pdf" target="_blank" style="text-decoration: none;">
+                <button style="
+                  padding: 12px 24px;
+                  background-color: #6a0dad;
+                  color: white;
+                  border: none;
+                  border-radius: 8px;
+                  font-weight: 600;
+                  margin-top: 20px;
+                  cursor: pointer;
+                  transition: background 0.3s ease;
+                " onmouseover="this.style.backgroundColor='#8a3dc2'" onmouseout="this.style.backgroundColor='#6a0dad'">
+                  📄 View My Resume
+                </button>
+              </a>
+              
         </div>
         <div class="intro-image">
             <img src="main -image_home.webp" alt="Illustration of Vaibhav">
-        </div>
-    </section>
-    
-    <h1 id="projects-title">
-        <a href="#projects-section">Explore My Creations</a>
-      </h1>
-
-      <div id="view-all-projects">
-        <a href="https://github.com/vaibhavahir1411?tab=repositories" target="_blank" class="view-all-button">View All Projects</a>
-    </div>
-    <!-- Projects -->
-    <section class="projects">
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/portfolio-project(1)/main_cover_photo.png" alt="Project 1">
-            </div>
-            <div class="project-details">
-                <h3>Personal Portfolio Website</h3>
-                <hr>
-                <a href="project1.html" class="view-details">VIEW DETAILS</a>
-            </div>
-        </div>
-    
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/netflix clone-project(2)/main_display_photo.png" alt="Project 2">
-            </div>
-            <div class="project-details">
-                <h3>Netflix Clone</h3>
-                <hr>
-                <a href="project2.html" class="view-details">VIEW DETAILS</a>
-            </div>
-        </div>
-    
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/hacker's terminal-project(3)/main_screen_img.png" alt="Project 3">
-            </div>
-            <div class="project-details">
-                <h3>Hacker's Terminal</h3>
-                <hr>
-                <a href="project3.html" class="view-details">VIEW DETAILS</a>
-            </div>
-        </div>
-    
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/currency converter-project(4)/main_image.png" alt="Project 4">
-            </div>
-            <div class="project-details">
-                <h3>Currency Converter App</h3>
-                <hr>
-                <a href="project4.html" class="view-details">VIEW DETAILS</a>
-            </div>
-        </div>
-    
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/weather app project(5)/main_image.png" alt="Project 5">
-            </div>
-            <div class="project-details">
-                <h3>Weather App</h3>
-                <hr>
-                <a href="project5.html" class="view-details">VIEW DETAILS</a>
-            </div>
-        </div>
-    
-        <div class="project">
-            <div class="project-image">
-                <img src="projects/calculator-project(6)/main_photo.png" alt="Project 6">
-            </div>
-            <div class="project-details">
-                <h3>Calculator</h3>
-                <hr>
-                <a href="project6.html" class="view-details">VIEW DETAILS</a>
-            </div>
         </div>
     </section>
     <footer>
         <p>Made with 💜 by Vaibhav © 2025</p>
     </footer>
     <script>
-        document.getElementById("projects-title").addEventListener("click", function () {
-          window.scrollTo({
-            top: 700,  // Adjust this value to match your project section position
-            behavior: "smooth"
-          });
-        });
-
-        document.getElementById("project-nav").addEventListener("click", function () {
-          window.scrollTo({
-            top: 700,  // Adjust this value to match your project section position
-            behavior: "smooth"
-          });
-        });
 
         document.querySelector(".menu-toggle").addEventListener("click", function () {
             document.querySelector(".nav-links").classList.toggle("show");

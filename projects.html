@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaibhav - Projects</title>
+  <link rel="stylesheet" href="nav-footer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .projects-section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 36px;
+      font-weight: 800;
+      color: #6a0dad;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 0;
+      height: 3px;
+      background-color: #6a0dad;
+      transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .section-title:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+      justify-items: center;
+    }
+
+  
+
+    .project {
+      background-color: #000;
+      overflow: hidden;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(157, 150, 162, 0.4);
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(157, 150, 162, 0.4);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+    .project:hover .project-details {
+      opacity: 1;
+    }
+
+    .project-details h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .project-details hr {
+      width: 50%;
+      border: 0.5px solid white;
+      margin: 10px 0;
+    }
+
+    .view-details {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .project:hover .view-details {
+      color: #bbb;
+    }
+    
+
+    @media (max-width: 426px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* One per row */
+    gap: 20px;
+  }
+
+  .project {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .project-details h3 {
+    font-size: 16px;
+  }
+
+  .view-details {
+    font-size: 14px;
+  }
+}
+
+    @media (max-width: 1024px) {
+  .project {
+    width: 90%;
+    height: 300px; /* Smaller height */
+    aspect-ratio: 1 / 1;
+  }
+  
+
+  .project-details h3 {
+    font-size: 18px;
+  }
+
+  .view-details {
+    font-size: 14px;
+  }
+}
+
+#view-all-projects {
+  text-align: center;
+  margin-bottom:40px;
+}
+
+.view-all-button {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #6a0dad;
+  padding: 12px 24px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #5a0b9d;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Vaibhav</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <h2 class="section-title">Main Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/notes-app/notesApp-photo.png" alt="Portfolio" />
+        </div>
+        <div class="project-details">
+          <h3>Notes App</h3>
+          <hr />
+          <a href="projects/projects html/notes-app.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/portfolio/main_cover_photo.png" alt="Netflix Clone" />
+        </div>
+        <div class="project-details">
+          <h3>Personal portfolio website</h3>
+          <hr />
+          <a href="projects/projects html/portfolio-project.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <h2 class="section-title">Mini Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/weather app/main_image.png" alt="Hacker's Terminal" />
+        </div>
+        <div class="project-details">
+          <h3>Weather app</h3>
+          <hr />
+          <a href="/projects/projects html/weather-app.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/tic-tac-toe/tic-tac-toe image.png" alt="tic-tac-toe" />
+        </div>
+        <div class="project-details">
+          <h3>Tic Tac Toe Game</h3>
+          <hr />
+          <a href="projects/projects html/tic-tac-toe.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/currency converter/main_image.png" alt="currency converter" />
+        </div>
+        <div class="project-details">
+          <h3>Currency Converter</h3>
+          <hr />
+          <a href="projects/projects html/currency-converter.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image">
+          <img src="projects/project photos/age-calculator/age-calculator.png" alt="Age Calculator" />
+        </div>
+        <div class="project-details">
+          <h3>Age Calculator</h3>
+          <hr />
+          <a href="projects/projects html/age-calculator.html" class="view-details">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="view-all-projects">
+    <a href="https://github.com/vaibhavahir1411" target="_blank" class="view-all-button">View All Projects</a>
+  </div>
+  
+  <footer>
+    <p>Made with 💜 by Vaibhav © 2025</p>
+  </footer>
+
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

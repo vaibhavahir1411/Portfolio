@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - My Portfolio</title>
+    <link rel="stylesheet" href="/nav-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/projects/projects.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Vaibhav</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>  <!-- Toggle Menu Icon -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/projects.html" class="active">Projects</a></li>
+      <li><a href="/about.html">About Me</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        
+        
+        <h1>My Portfolio Website</h1>
+        <p class="project-description">My portfolio website is a fully responsive, modern, and visually appealing platform designed to showcase my skills, projects, and experience. It features an intuitive navigation system, smooth animations, and a sleek UI to provide an engaging user experience. The website includes multiple sections, such as a homepage introduction, skills overview, project gallery, about me section, and an easy-to-use contact page. Built with the latest web technologies, this portfolio ensures fast performance, accessibility, and mobile responsiveness, making it a perfect platform for presenting my work.</p>
+        
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="/projects/project photos/portfolio/main_cover_photo.png" alt="Home Page Screenshot">
+            </div>
+            
+        </div>
+        
+        <div class="details">
+            <h2>Project Features</h2>
+            <ul>
+                <li>Fully Responsive Design</li>
+                <li>Modern UI/UX with animations</li>
+                <li>Optimized Performance</li>
+            </ul>
+        </div>
+        
+        <div class="details">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstarp</li>
+            </ul>
+        </div>
+
+        <div class="details">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li><b>Dark/Light Mode Toggle:</b> A fully functional dark and light mode switch to enhance user experience based on preferences.</li>
+                <li><b>Blog Section:</b> Adding a blog section where I can share my thoughts, tutorials, and experiences in web development.</li>
+                <li><b>Project Filtering & Sorting: </b>A feature that allows users to filter projects by category or technology.</li>
+                <li><b>Interactive Animations:</b> Advanced animations using GSAP or Framer Motion to make the website more dynamic.</li>
+            </ul>
+        </div>
+        
+        <div class="button-container">
+            <a href="https://vaibhavmakvana-portfolio.netlify.app/" target="_blank" class="demo-button">View Live Demo</a>
+        </div>
+        <div class="button-container right-align">
+            <button class="back-button" onclick="history.back()">⬅ Back</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Made with 💜 by Vaibhav © 2025</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator - My Portfolio</title>
+  <link rel="stylesheet" href="/nav-footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projects/projects.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Vaibhav</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Age Calculator App</h1>
+    <p class="project-description">
+      The Age Calculator App is a simple yet useful tool that calculates your age based on the date of birth you enter. It features a clean and user-friendly interface and instantly shows your age in years, months, and days. This project is great for demonstrating form handling, date calculations, and JavaScript logic.
+    </p>
+
+    <div class="image-gallery">
+      <div class="image-item">
+        <img src="/projects/project photos/age-calculator/age-calculator.png" alt="Age Calculator Screenshot">
+      </div>
+    </div>
+
+    <div class="details">
+      <h2>Project Features</h2>
+      <ul>
+        <li>Instant and accurate age calculation</li>
+        <li>Responsive and clean UI</li>
+        <li>Shows age in years, months, and days</li>
+        <li><b>Date Validation:</b> Add checks for invalid or future dates</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Future Enhancements</h2>
+      <ul>
+        <li><b>Theme Switch:</b> Option for dark/light mode</li>
+        <li><b>Next Birthday Countdown:</b> Show how many days left until next birthday</li>
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <a href="https://age-callculator.netlify.app/" target="_blank" class="demo-button">View Live Demo</a>
+    </div>
+    <div class="button-container right-align">
+      <button class="back-button" onclick="history.back()">⬅ Back</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💜 by Vaibhav © 2025</p>
+  </footer>
+
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

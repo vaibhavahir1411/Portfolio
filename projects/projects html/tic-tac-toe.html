@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project - Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="/nav-footer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/projects/projects.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo">Vaibhav</div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/skills.html">Skills</a></li>
+      <li><a href="/projects.html" class="active">Projects</a></li>
+      <li><a href="/about.html">About Me</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Tic Tac Toe Game</h1>
+    <p class="project-description">
+      This is a simple yet interactive Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns marking X and O on a 3x3 grid, automatically detecting the winner or a draw. It features a clean UI and a reset functionality to replay the game.
+    </p>
+
+    <div class="image-gallery">
+      <div class="image-item">
+        <img src="/projects/project photos/tic-tac-toe/tic-tac-toe image.png" alt="Tic Tac Toe Game Screenshot">
+      </div>
+    </div>
+
+    <div class="details">
+      <h2>Project Features</h2>
+      <ul>
+        <li>2-Player Mode (X and O)</li>
+        <li>Win and Draw Detection</li>
+        <li>Game Reset Button</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="details">
+      <h2>Future Enhancements</h2>
+      <ul>
+        <li><b>Single Player Mode:</b> Add AI to play against the computer.</li>
+        <li><b>Scoreboard:</b> Track wins/losses for each player.</li>
+        <li><b>Animations:</b> Add smooth transitions and winning effects.</li>
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <a href="https://tic-tac-toe-0xgame.netlify.app/" target="_blank" class="demo-button">View Live Demo</a>
+    </div>
+    <div class="button-container right-align">
+      <button class="back-button" onclick="history.back()">⬅ Back</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💜 by Vaibhav © 2025</p>
+  </footer>
+
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
